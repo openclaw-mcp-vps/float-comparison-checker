@@ -1,24 +1,42 @@
 {
   "name": "float-comparison-checker",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "type": "module",
+  "description": "Safe floating point comparison validator with web dashboard and CLI",
+  "bin": {
+    "float-comparison-checker": "./cli/index.js"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "next": "15",
-    "react": "18",
-    "react-dom": "18"
+    "@babel/parser": "^7.28.0",
+    "@lemonsqueezy/lemonsqueezy.js": "^4.0.0",
+    "@tailwindcss/postcss": "^4.0.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "acorn": "^8.14.1",
+    "chalk": "^5.4.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "commander": "^12.1.0",
+    "glob": "^11.0.1",
+    "lucide-react": "^0.468.0",
+    "next": "^15.0.0",
+    "next-auth": "^5.0.0-beta.25",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss": "^4.0.0",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "tailwindcss": "^3",
-    "postcss": "^8",
-    "autoprefixer": "^10"
+    "@types/node": "^22.10.1",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "typescript": "^5.7.2"
   }
 }
